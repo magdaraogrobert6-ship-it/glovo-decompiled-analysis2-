@@ -31,3 +31,8 @@ profile-search.txt
 *.key
 *.p12
 *.pfx
+
+# Decompiled APK analysis output
+decompiled/*.jadx
+decompiled/resources/
+extracted/
