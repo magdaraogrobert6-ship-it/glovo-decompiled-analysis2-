@@ -1,0 +1,13 @@
+package androidx.compose.animation.core.internal;
+
+import java.util.concurrent.CancellationException;
+import o.WindowInsetsPaddingKt;
+
+/* JADX INFO: loaded from: classes.dex */
+public abstract class PlatformOptimizedCancellationException extends CancellationException {
+    @Override // java.lang.Throwable
+    public final Throwable fillInStackTrace() {
+        setStackTrace(WindowInsetsPaddingKt.RemoteActionCompatParcelizer);
+        return this;
+    }
+}

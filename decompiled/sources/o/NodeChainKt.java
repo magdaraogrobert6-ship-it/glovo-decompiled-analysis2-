@@ -1,0 +1,9 @@
+package o;
+
+/* JADX INFO: loaded from: classes2.dex */
+public enum NodeChainKt {
+    INITIALIZE_LOCAL_LISTEN_AND_REQUIRE_WATCH_CONNECTION,
+    INITIALIZE_LOCAL_LISTEN_ONLY,
+    REQUIRE_WATCH_CONNECTION_ONLY,
+    NO_ACTION_REQUIRED
+}

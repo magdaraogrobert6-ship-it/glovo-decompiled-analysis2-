@@ -1,0 +1,33 @@
+# Original APK/archive
+*.apk
+*.aab
+*.zip
+*.xapk
+*.apks
+*.rar
+*.7z
+
+# Local/build artifacts
+.idea/
+.gradle/
+build/
+out/
+local.properties
+
+# Potentially sensitive analysis dumps
+auth.txt
+login.txt
+rider_api.txt
+api_candidates.txt
+urls.txt
+urls_full.txt
+urls_only.txt
+profile-search.txt
+
+# Keys/secrets
+*.keystore
+*.jks
+*.pem
+*.key
+*.p12
+*.pfx

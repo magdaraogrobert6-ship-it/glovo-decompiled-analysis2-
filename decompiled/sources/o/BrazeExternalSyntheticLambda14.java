@@ -1,0 +1,124 @@
+package o;
+
+import com.deliveryhero.performance.core.screenmetric.ScreenStartObserver$$ExternalSyntheticLambda0;
+
+/* JADX INFO: loaded from: classes3.dex */
+public final /* synthetic */ class BrazeExternalSyntheticLambda14 implements getInAppMessageManager {
+    private static int IconCompatParcelizer = 0;
+    public static final BrazeExternalSyntheticLambda14 RemoteActionCompatParcelizer;
+    private static final r8lambda92M0P9sIT5Uf70mvjF4RwMruDA descriptor;
+    private static int read = 1;
+    private static int serializer = 0;
+    private static int write = 1;
+
+    static {
+        BrazeExternalSyntheticLambda14 brazeExternalSyntheticLambda14 = new BrazeExternalSyntheticLambda14();
+        RemoteActionCompatParcelizer = brazeExternalSyntheticLambda14;
+        onCloseActionlambda1 oncloseactionlambda1 = new onCloseActionlambda1("com.roadrunner.web.model.AqsScreenStopTracePayload", brazeExternalSyntheticLambda14, 1);
+        oncloseactionlambda1.read("screen", false);
+        descriptor = oncloseactionlambda1;
+        int i = read + 55;
+        IconCompatParcelizer = i % androidx.compose.ui.graphics.Fields.SpotShadowColor;
+        if (i % 2 != 0) {
+            int i2 = 98 / 0;
+        }
+    }
+
+    @Override // o.setGraphicModalMaxWidthDp
+    public final r8lambda92M0P9sIT5Uf70mvjF4RwMruDA getDescriptor() {
+        int i = 2 % 2;
+        int i2 = serializer + 99;
+        int i3 = i2 % androidx.compose.ui.graphics.Fields.SpotShadowColor;
+        write = i3;
+        int i4 = i2 % 2;
+        r8lambda92M0P9sIT5Uf70mvjF4RwMruDA r8lambda92m0p9sit5uf70mvjf4rwmruda = descriptor;
+        int i5 = i3 + 121;
+        serializer = i5 % androidx.compose.ui.graphics.Fields.SpotShadowColor;
+        int i6 = i5 % 2;
+        return r8lambda92m0p9sit5uf70mvjf4rwmruda;
+    }
+
+    @Override // o.getInAppMessageManager
+    public final setGraphicModalMaxWidthDp[] childSerializers() {
+        int i = 2 % 2;
+        int i2 = serializer + 69;
+        write = i2 % androidx.compose.ui.graphics.Fields.SpotShadowColor;
+        int i3 = i2 % 2;
+        setGraphicModalMaxWidthDp[] setgraphicmodalmaxwidthdpArr = {beforeInAppMessageViewClosed.RemoteActionCompatParcelizer};
+        int i4 = write + 63;
+        serializer = i4 % androidx.compose.ui.graphics.Fields.SpotShadowColor;
+        if (i4 % 2 != 0) {
+            int i5 = 4 / 0;
+        }
+        return setgraphicmodalmaxwidthdpArr;
+    }
+
+    @Override // o.setGraphicModalMaxWidthDp
+    public final void serialize(DefaultInAppMessageViewWrapperFactory defaultInAppMessageViewWrapperFactory, Object obj) {
+        int i = 2 % 2;
+        int i2 = serializer + 71;
+        write = i2 % androidx.compose.ui.graphics.Fields.SpotShadowColor;
+        int i3 = i2 % 2;
+        BrazeExternalSyntheticLambda149 brazeExternalSyntheticLambda149 = (BrazeExternalSyntheticLambda149) obj;
+        brazeExternalSyntheticLambda149.getClass();
+        r8lambda92M0P9sIT5Uf70mvjF4RwMruDA r8lambda92m0p9sit5uf70mvjf4rwmruda = descriptor;
+        DefaultInAppMessageSlideupViewFactory defaultInAppMessageSlideupViewFactorySerializer = defaultInAppMessageViewWrapperFactory.serializer(r8lambda92m0p9sit5uf70mvjf4rwmruda);
+        defaultInAppMessageSlideupViewFactorySerializer.serializer(r8lambda92m0p9sit5uf70mvjf4rwmruda, 0, brazeExternalSyntheticLambda149.screen);
+        defaultInAppMessageSlideupViewFactorySerializer.IconCompatParcelizer(r8lambda92m0p9sit5uf70mvjf4rwmruda);
+        int i4 = serializer + 65;
+        write = i4 % androidx.compose.ui.graphics.Fields.SpotShadowColor;
+        if (i4 % 2 != 0) {
+            return;
+        }
+        Object obj2 = null;
+        obj2.hashCode();
+        throw null;
+    }
+
+    @Override // o.setGraphicModalMaxWidthDp
+    public final Object deserialize(DefaultInAppMessageModalViewFactoryCompanion defaultInAppMessageModalViewFactoryCompanion) {
+        r8lambda92M0P9sIT5Uf70mvjF4RwMruDA r8lambda92m0p9sit5uf70mvjf4rwmruda;
+        createInAppMessageViewlambda1 createinappmessageviewlambda1Serializer;
+        boolean z;
+        int i = 2 % 2;
+        int i2 = write + 115;
+        serializer = i2 % androidx.compose.ui.graphics.Fields.SpotShadowColor;
+        if (i2 % 2 != 0) {
+            r8lambda92m0p9sit5uf70mvjf4rwmruda = descriptor;
+            createinappmessageviewlambda1Serializer = defaultInAppMessageModalViewFactoryCompanion.serializer(r8lambda92m0p9sit5uf70mvjf4rwmruda);
+            createinappmessageviewlambda1Serializer.getClass();
+            z = false;
+        } else {
+            r8lambda92m0p9sit5uf70mvjf4rwmruda = descriptor;
+            createinappmessageviewlambda1Serializer = defaultInAppMessageModalViewFactoryCompanion.serializer(r8lambda92m0p9sit5uf70mvjf4rwmruda);
+            createinappmessageviewlambda1Serializer.getClass();
+            z = true;
+        }
+        int i3 = serializer + 53;
+        write = i3 % androidx.compose.ui.graphics.Fields.SpotShadowColor;
+        int i4 = i3 % 2;
+        int i5 = 0;
+        String strMediaMetadataCompat = null;
+        while (z) {
+            int i6 = serializer + 123;
+            write = i6 % androidx.compose.ui.graphics.Fields.SpotShadowColor;
+            if (i6 % 2 == 0) {
+                createinappmessageviewlambda1Serializer.read(r8lambda92m0p9sit5uf70mvjf4rwmruda);
+                throw null;
+            }
+            int i7 = createinappmessageviewlambda1Serializer.read(r8lambda92m0p9sit5uf70mvjf4rwmruda);
+            if (i7 == -1) {
+                z = false;
+            } else {
+                if (i7 != 0) {
+                    ScreenStartObserver$$ExternalSyntheticLambda0.serializer(i7);
+                    return null;
+                }
+                strMediaMetadataCompat = createinappmessageviewlambda1Serializer.MediaMetadataCompat(r8lambda92m0p9sit5uf70mvjf4rwmruda, 0);
+                i5 = 1;
+            }
+        }
+        createinappmessageviewlambda1Serializer.write(r8lambda92m0p9sit5uf70mvjf4rwmruda);
+        return new BrazeExternalSyntheticLambda149(i5, strMediaMetadataCompat);
+    }
+}

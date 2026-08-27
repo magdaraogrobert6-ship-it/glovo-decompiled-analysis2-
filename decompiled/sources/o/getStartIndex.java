@@ -1,0 +1,82 @@
+package o;
+
+/* JADX INFO: loaded from: classes3.dex */
+public final class getStartIndex extends ParagraphDefaultImpls {
+    private static int IconCompatParcelizer = 0;
+    private static int serializer = 1;
+    public final mergedefault write;
+
+    public final mergedefault read() {
+        int i = 2 % 2;
+        int i2 = IconCompatParcelizer;
+        int i3 = i2 + 75;
+        serializer = i3 % androidx.compose.ui.graphics.Fields.SpotShadowColor;
+        int i4 = i3 % 2;
+        mergedefault mergedefaultVar = this.write;
+        int i5 = i2 + 23;
+        serializer = i5 % androidx.compose.ui.graphics.Fields.SpotShadowColor;
+        if (i5 % 2 != 0) {
+            return mergedefaultVar;
+        }
+        Object obj = null;
+        obj.hashCode();
+        throw null;
+    }
+
+    public getStartIndex(mergedefault mergedefaultVar) {
+        this.write = mergedefaultVar;
+    }
+
+    public final int hashCode() {
+        int i = 2 % 2;
+        int i2 = serializer + 57;
+        int i3 = i2 % androidx.compose.ui.graphics.Fields.SpotShadowColor;
+        IconCompatParcelizer = i3;
+        int i4 = i2 % 2;
+        mergedefault mergedefaultVar = this.write;
+        if (mergedefaultVar != null) {
+            return mergedefaultVar.hashCode();
+        }
+        int i5 = i3 + 3;
+        serializer = i5 % androidx.compose.ui.graphics.Fields.SpotShadowColor;
+        return i5 % 2 == 0 ? 1 : 0;
+    }
+
+    public final String toString() {
+        int i = 2 % 2;
+        String str = "ShareImage(imageSelectionType=" + this.write + ")";
+        int i2 = serializer + 37;
+        IconCompatParcelizer = i2 % androidx.compose.ui.graphics.Fields.SpotShadowColor;
+        if (i2 % 2 != 0) {
+            int i3 = 82 / 0;
+        }
+        return str;
+    }
+
+    public final boolean equals(Object obj) {
+        int i = 2 % 2;
+        int i2 = serializer + 101;
+        int i3 = i2 % androidx.compose.ui.graphics.Fields.SpotShadowColor;
+        IconCompatParcelizer = i3;
+        if (i2 % 2 != 0) {
+            throw null;
+        }
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof getStartIndex)) {
+            int i4 = i3 + 11;
+            serializer = i4 % androidx.compose.ui.graphics.Fields.SpotShadowColor;
+            int i5 = i4 % 2;
+            return false;
+        }
+        Object[] objArr = {this.write, ((getStartIndex) obj).write};
+        if (!((Boolean) removeNodeAtDepth.RemoteActionCompatParcelizer(getCieXyz.write(), 1803334089, -1803334089, getCieXyz.write(), getCieXyz.write(), objArr, getCieXyz.write())).booleanValue()) {
+            return false;
+        }
+        int i6 = serializer + 109;
+        IconCompatParcelizer = i6 % androidx.compose.ui.graphics.Fields.SpotShadowColor;
+        int i7 = i6 % 2;
+        return true;
+    }
+}

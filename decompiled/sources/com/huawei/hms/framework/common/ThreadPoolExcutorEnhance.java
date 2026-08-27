@@ -1,0 +1,66 @@
+package com.huawei.hms.framework.common;
+
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.ForkJoinPool;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.RejectedExecutionHandler;
+import java.util.concurrent.ThreadFactory;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
+/* JADX INFO: loaded from: classes2.dex */
+public class ThreadPoolExcutorEnhance extends ThreadPoolExecutor implements AutoCloseable {
+    @Override // java.util.concurrent.ThreadPoolExecutor, java.util.concurrent.Executor
+    public void execute(Runnable runnable) {
+        super.execute(new RunnableEnhance(runnable));
+    }
+
+    @Override // java.util.concurrent.ThreadPoolExecutor
+    public void beforeExecute(Thread thread, Runnable runnable) {
+        if (runnable instanceof RunnableEnhance) {
+            String parentName = ((RunnableEnhance) runnable).getParentName();
+            int iLastIndexOf = parentName.lastIndexOf(" ->");
+            if (iLastIndexOf != -1) {
+                parentName = StringUtils.substring(parentName, iLastIndexOf + 3);
+            }
+            String name = thread.getName();
+            int iLastIndexOf2 = name.lastIndexOf(" ->");
+            if (iLastIndexOf2 != -1) {
+                name = StringUtils.substring(name, iLastIndexOf2 + 3);
+            }
+            thread.setName(parentName + " ->" + name);
+        }
+        super.beforeExecute(thread, runnable);
+    }
+
+    @Override // java.lang.AutoCloseable
+    public final /* synthetic */ void close() {
+        boolean zIsTerminated;
+        if (this == ForkJoinPool.commonPool() || (zIsTerminated = isTerminated())) {
+            return;
+        }
+        shutdown();
+        boolean z = false;
+        while (!zIsTerminated) {
+            try {
+                zIsTerminated = awaitTermination(1L, TimeUnit.DAYS);
+            } catch (InterruptedException unused) {
+                if (!z) {
+                    shutdownNow();
+                    z = true;
+                }
+            }
+        }
+        if (z) {
+            Thread.currentThread().interrupt();
+        }
+    }
+
+    public ThreadPoolExcutorEnhance(int i, int i2, int i3, TimeUnit timeUnit, LinkedBlockingQueue<Runnable> linkedBlockingQueue, ThreadFactory threadFactory, RejectedExecutionHandler rejectedExecutionHandler) {
+        super(i, i2, i3, timeUnit, linkedBlockingQueue, threadFactory, rejectedExecutionHandler);
+    }
+
+    public ThreadPoolExcutorEnhance(int i, int i2, long j, TimeUnit timeUnit, BlockingQueue<Runnable> blockingQueue, ThreadFactory threadFactory) {
+        super(i, i2, j, timeUnit, blockingQueue, threadFactory);
+    }
+}

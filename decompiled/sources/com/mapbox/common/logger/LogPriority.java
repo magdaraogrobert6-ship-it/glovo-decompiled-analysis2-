@@ -1,0 +1,11 @@
+package com.mapbox.common.logger;
+
+/* JADX INFO: loaded from: classes5.dex */
+public final class LogPriority {
+    public static final int DEBUG = 3;
+    public static final int ERROR = 6;
+    public static final int INFO = 4;
+    public static final int NONE = 99;
+    public static final int VERBOSE = 2;
+    public static final int WARN = 5;
+}

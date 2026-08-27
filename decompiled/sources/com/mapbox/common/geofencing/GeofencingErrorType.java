@@ -1,0 +1,23 @@
+package com.mapbox.common.geofencing;
+
+/* JADX INFO: loaded from: classes5.dex */
+public enum GeofencingErrorType {
+    GENERIC,
+    NOT_AVAILABLE,
+    DEFAULT_RADIUS_TOO_LARGE,
+    MONITORED_FEATURES_LIMIT_REACHED,
+    LOCATION_SERVICE_UNAVAILABLE,
+    LOCATION_SERVICE_UNAUTHORIZED,
+    LOCATION_SERVICE_INACCURATE,
+    DEVICE_LOCATION_PROVIDER_ERROR,
+    FEATURE_ALREADY_ADDED,
+    FEATURE_NOT_FOUND,
+    FEATURE_INVALID,
+    OBSERVER_ALREADY_ADDED,
+    OBSERVER_NOT_FOUND,
+    FEATURE_NOT_STORED;
+
+    public final int getValue() {
+        return ordinal();
+    }
+}

@@ -1,0 +1,77 @@
+package com.mapbox.navigator;
+
+import com.mapbox.bindgen.CleanerService;
+import com.mapbox.common.BaseMapboxInitializer;
+import com.mapbox.geojson.Point;
+import java.util.List;
+
+/* JADX INFO: loaded from: classes3.dex */
+public class GraphAccessor implements GraphAccessorInterface {
+    protected long peer;
+
+    /* JADX INFO: loaded from: classes4.dex */
+    public static class GraphAccessorPeerCleaner implements Runnable {
+        private long peer;
+
+        @Override // java.lang.Runnable
+        public void run() {
+            GraphAccessor.cleanNativePeer(this.peer);
+        }
+
+        public GraphAccessorPeerCleaner(long j) {
+            this.peer = j;
+        }
+    }
+
+    public static native void cleanNativePeer(long j);
+
+    private native void initialize(CacheHandle cacheHandle);
+
+    private native void initialize(TilesManagerHandle tilesManagerHandle);
+
+    private static native void nativeSelfRegister();
+
+    @Override // com.mapbox.navigator.GraphAccessorInterface
+    public native EdgeAdasAttributes getAdasAttributes(long j);
+
+    @Override // com.mapbox.navigator.GraphAccessorInterface
+    public native EdgeMetadata getEdgeMetadata(long j);
+
+    @Override // com.mapbox.navigator.GraphAccessorInterface
+    public native List<Point> getEdgeShape(long j);
+
+    @Override // com.mapbox.navigator.GraphAccessorInterface
+    public native List<Point> getPathShape(GraphPath graphPath);
+
+    @Override // com.mapbox.navigator.GraphAccessorInterface
+    public native Point getPositionCoordinate(GraphPosition graphPosition);
+
+    static {
+        BaseMapboxInitializer.init(MapboxNavigationNativeInitializerImpl.class);
+        try {
+            nativeSelfRegister();
+        } catch (UnsatisfiedLinkError unused) {
+        }
+    }
+
+    @Deprecated
+    public GraphAccessor(CacheHandle cacheHandle) {
+        initialize(cacheHandle);
+    }
+
+    public GraphAccessor(TilesManagerHandle tilesManagerHandle) {
+        initialize(tilesManagerHandle);
+    }
+
+    public GraphAccessor(long j) {
+        setPeer(j);
+    }
+
+    private void setPeer(long j) {
+        this.peer = j;
+        if (j == 0) {
+            return;
+        }
+        CleanerService.register(this, new GraphAccessorPeerCleaner(j));
+    }
+}

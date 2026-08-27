@@ -1,0 +1,20 @@
+package o;
+
+import bo.app.af$$ExternalSyntheticOutline1;
+
+/* JADX INFO: loaded from: classes2.dex */
+public final class transformFromEL8BTi8 implements accessdetachAndRemoveNode {
+    public static final transformFromEL8BTi8 write = new transformFromEL8BTi8();
+
+    static {
+        af$$ExternalSyntheticOutline1.m(getBitmapFromCache.RemoteActionCompatParcelizer(accesscomputeFillMaxDimensioniLBOSCw.class, new computeFillHeightiLBOSCw(1, computeFillMinDimensioniLBOSCw.DEFAULT)));
+    }
+
+    @Override // o.accessgetLoggerp
+    public final /* synthetic */ void serializer(Object obj, Object obj2) {
+        if (obj != null) {
+            throw new ClassCastException();
+        }
+        throw null;
+    }
+}

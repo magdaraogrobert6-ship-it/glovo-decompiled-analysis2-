@@ -1,0 +1,69 @@
+package org.joda.time.field;
+
+import com.deliveryhero.performance.core.screenmetric.ScreenStartObserver$$ExternalSyntheticLambda0;
+import org.joda.time.DurationField;
+import org.joda.time.DurationFieldType;
+
+/* JADX INFO: loaded from: classes4.dex */
+public class DecoratedDurationField extends BaseDurationField {
+    private static final long serialVersionUID = 8019982251647420015L;
+    private final DurationField iField;
+
+    public final DurationField getWrappedField() {
+        return this.iField;
+    }
+
+    @Override // org.joda.time.DurationField
+    public long add(long j, int i) {
+        return this.iField.add(j, i);
+    }
+
+    @Override // org.joda.time.DurationField
+    public long getDifferenceAsLong(long j, long j2) {
+        return this.iField.getDifferenceAsLong(j, j2);
+    }
+
+    @Override // org.joda.time.DurationField
+    public long getMillis(int i, long j) {
+        return this.iField.getMillis(i, j);
+    }
+
+    @Override // org.joda.time.DurationField
+    public long getUnitMillis() {
+        return this.iField.getUnitMillis();
+    }
+
+    @Override // org.joda.time.DurationField
+    public long getValueAsLong(long j, long j2) {
+        return this.iField.getValueAsLong(j, j2);
+    }
+
+    @Override // org.joda.time.DurationField
+    public boolean isPrecise() {
+        return this.iField.isPrecise();
+    }
+
+    public DecoratedDurationField(DurationField durationField, DurationFieldType durationFieldType) {
+        super(durationFieldType);
+        if (durationField == null) {
+            ScreenStartObserver$$ExternalSyntheticLambda0.IconCompatParcelizer("The field must not be null");
+            throw null;
+        }
+        if (durationField.isSupported()) {
+            this.iField = durationField;
+        } else {
+            ScreenStartObserver$$ExternalSyntheticLambda0.IconCompatParcelizer("The field must be supported");
+            throw null;
+        }
+    }
+
+    @Override // org.joda.time.DurationField
+    public long add(long j, long j2) {
+        return this.iField.add(j, j2);
+    }
+
+    @Override // org.joda.time.DurationField
+    public long getMillis(long j, long j2) {
+        return this.iField.getMillis(j, j2);
+    }
+}

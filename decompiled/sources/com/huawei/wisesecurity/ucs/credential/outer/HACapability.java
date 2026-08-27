@@ -1,0 +1,11 @@
+package com.huawei.wisesecurity.ucs.credential.outer;
+
+import android.content.Context;
+import o.CollectionInfo;
+
+/* JADX INFO: loaded from: classes2.dex */
+public interface HACapability {
+    public static final String UCS_CREDENTIAL_HA_SERVICE_TAG = "UCS_CREDENTIAL";
+
+    void onEvent(Context context, String str, CollectionInfo collectionInfo);
+}

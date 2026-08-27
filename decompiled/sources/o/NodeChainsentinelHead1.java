@@ -1,0 +1,9 @@
+package o;
+
+/* JADX INFO: loaded from: classes2.dex */
+public enum NodeChainsentinelHead1 {
+    TERMINATE_LOCAL_LISTEN_AND_REQUIRE_WATCH_DISCONNECTION,
+    TERMINATE_LOCAL_LISTEN_ONLY,
+    REQUIRE_WATCH_DISCONNECTION_ONLY,
+    NO_ACTION_REQUIRED
+}

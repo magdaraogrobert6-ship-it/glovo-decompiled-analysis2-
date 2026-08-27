@@ -1,0 +1,6 @@
+package o;
+
+/* JADX INFO: loaded from: classes4.dex */
+public abstract class getNamedComplexColor {
+    public static final int[] ShimmerFrameLayout = {com.logistics.rider.glovo.R.attr.shimmer_auto_start, com.logistics.rider.glovo.R.attr.shimmer_base_alpha, com.logistics.rider.glovo.R.attr.shimmer_base_color, com.logistics.rider.glovo.R.attr.shimmer_clip_to_children, com.logistics.rider.glovo.R.attr.shimmer_colored, com.logistics.rider.glovo.R.attr.shimmer_direction, com.logistics.rider.glovo.R.attr.shimmer_dropoff, com.logistics.rider.glovo.R.attr.shimmer_duration, com.logistics.rider.glovo.R.attr.shimmer_fixed_height, com.logistics.rider.glovo.R.attr.shimmer_fixed_width, com.logistics.rider.glovo.R.attr.shimmer_height_ratio, com.logistics.rider.glovo.R.attr.shimmer_highlight_alpha, com.logistics.rider.glovo.R.attr.shimmer_highlight_color, com.logistics.rider.glovo.R.attr.shimmer_intensity, com.logistics.rider.glovo.R.attr.shimmer_repeat_count, com.logistics.rider.glovo.R.attr.shimmer_repeat_delay, com.logistics.rider.glovo.R.attr.shimmer_repeat_mode, com.logistics.rider.glovo.R.attr.shimmer_shape, com.logistics.rider.glovo.R.attr.shimmer_tilt, com.logistics.rider.glovo.R.attr.shimmer_width_ratio};
+}

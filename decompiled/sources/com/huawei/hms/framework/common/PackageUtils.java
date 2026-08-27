@@ -1,0 +1,22 @@
+package com.huawei.hms.framework.common;
+
+import android.content.Context;
+import android.content.pm.PackageManager;
+import androidx.compose.ui.graphics.Fields;
+
+/* JADX INFO: loaded from: classes4.dex */
+public class PackageUtils {
+    private static final String TAG = "PackageUtils";
+
+    public static String getVersionName(Context context) {
+        if (context == null) {
+            return "";
+        }
+        try {
+            return context.getPackageManager().getPackageInfo(context.getPackageName(), Fields.Clip).versionName;
+        } catch (PackageManager.NameNotFoundException | RuntimeException e) {
+            Logger.w(TAG, "", e);
+            return "";
+        }
+    }
+}

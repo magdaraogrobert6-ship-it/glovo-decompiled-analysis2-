@@ -1,0 +1,45 @@
+package o;
+
+import bo.app.b8$$ExternalSyntheticLambda4;
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Method;
+
+/* JADX INFO: loaded from: classes.dex */
+public abstract class getUnspecified0d7_KjU {
+    public static final androidx.compose.runtime.ProvidableCompositionLocal IconCompatParcelizer;
+
+    static {
+        Object isitemdismissable;
+        try {
+            ClassLoader classLoader = getTransparent0d7_KjU.class.getClassLoader();
+            classLoader.getClass();
+            Method method = classLoader.loadClass("androidx.compose.ui.platform.AndroidCompositionLocals_androidKt").getMethod("getLocalSavedStateRegistryOwner", null);
+            Annotation[] annotations = method.getAnnotations();
+            annotations.getClass();
+            int length = annotations.length;
+            int i = 0;
+            while (true) {
+                if (i < length) {
+                    if (!(annotations[i] instanceof onItemDismisslambda0)) {
+                        i++;
+                    }
+                } else {
+                    Object objInvoke = method.invoke(null, null);
+                    if (objInvoke instanceof androidx.compose.runtime.ProvidableCompositionLocal) {
+                        isitemdismissable = (androidx.compose.runtime.ProvidableCompositionLocal) objInvoke;
+                        break;
+                    }
+                }
+                isitemdismissable = null;
+                break;
+            }
+        } catch (Throwable th) {
+            isitemdismissable = new isItemDismissable(th);
+        }
+        androidx.compose.runtime.ProvidableCompositionLocal setcurrentsemanticsnodesui = (androidx.compose.runtime.ProvidableCompositionLocal) (isitemdismissable instanceof isItemDismissable ? null : isitemdismissable);
+        if (setcurrentsemanticsnodesui == null) {
+            setcurrentsemanticsnodesui = new setCurrentSemanticsNodesui(new b8$$ExternalSyntheticLambda4(24));
+        }
+        IconCompatParcelizer = setcurrentsemanticsnodesui;
+    }
+}

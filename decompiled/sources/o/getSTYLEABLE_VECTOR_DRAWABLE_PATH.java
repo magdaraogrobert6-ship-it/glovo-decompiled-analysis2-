@@ -1,0 +1,134 @@
+package o;
+
+import android.content.SharedPreferences;
+import com.foodora.courier.app.application.CourierApplication;
+import com.roadrunner.appperformance.TraceTimeMeasurementWithPerformanceKit;
+import com.roadrunner.delivery.repository.CachedDeliveryRepository;
+import com.roadrunner.delivery.repository.StateV3DeliveryProvider;
+import com.roadrunner.login.logging.RouterLogger;
+import com.roadrunner.map.container.enabled.presentation.MapNavigationWrapper;
+import com.roadrunner.map.container.enabled.presentation.MapboxFragment;
+import io.sentry.metrics.MetricsBatchProcessor;
+
+/* JADX INFO: loaded from: classes2.dex */
+public final class getSTYLEABLE_VECTOR_DRAWABLE_PATH implements r8lambdalZ7kyOB69DcxFWdLKMjr4_8S_34 {
+    private static int ComponentActivity = 0;
+    private static int r8lambda7IJBVrN0sHyidCAZufWEJFc7yY = 1;
+    public final j1 IconCompatParcelizer;
+    public final setUseTempTrackingTableroom_runtime MediaBrowserCompatMediaItem;
+    public final j1 MediaDescriptionCompat;
+    public final j1 MediaMetadataCompat;
+    public final postAnimationRunner MediaSessionCompatQueueItem;
+    public final transactionWithResultsuspendImpl MediaSessionCompatResultReceiverWrapper;
+    public final j1 MediaSessionCompatToken;
+    public final indexForKey ParcelableVolumeInfo;
+    public final hgExternalSyntheticLambda6 PlaybackStateCompat;
+    public final setPresentationView PlaybackStateCompatCustomAction;
+    public final setUseTempTrackingTableroom_runtime RatingCompat;
+    public final getDoubleOrNull RemoteActionCompatParcelizer;
+    public final performPushDeliveryFlushlambda0 ResultReceiver;
+    public final getDoubleOrNull r8lambda54BeH8ZsBru0CXI2CCSP2syNys;
+    public final j1 r8lambda7aWCLmlNPTirEoC8eOYg0rEvmus;
+    public final postAnimationRunner read;
+    public final r8lambdazXN1qqQhLYzDDSf7dMTrYE1xu8I serializer;
+    public final getSTYLEABLE_VECTOR_DRAWABLE_GROUP_ROTATION write;
+
+    public getSTYLEABLE_VECTOR_DRAWABLE_PATH(getSTYLEABLE_VECTOR_DRAWABLE_GROUP_ROTATION getstyleable_vector_drawable_group_rotation) {
+        this.write = getstyleable_vector_drawable_group_rotation;
+        this.ParcelableVolumeInfo = new indexForKey(getstyleable_vector_drawable_group_rotation.TransformGestureDetectorKtdetectTransformGestures2, getstyleable_vector_drawable_group_rotation.PreviewView1ExternalSyntheticLambda2, getstyleable_vector_drawable_group_rotation.FlingCancellationException, getstyleable_vector_drawable_group_rotation.AspectRatioLegacyApi21Quirk, getstyleable_vector_drawable_group_rotation.getWithMapboxGeofencingConsent, getstyleable_vector_drawable_group_rotation.removeOnContextAvailableListener, getstyleable_vector_drawable_group_rotation.FillElement, getstyleable_vector_drawable_group_rotation.createnHHXs2Y, getDoubleOrNull.write(new e4(new access500(new indexForKey((mergeJsonObjects) getstyleable_vector_drawable_group_rotation.setImageURI, (getColorIntegerOrNulllambda0) getstyleable_vector_drawable_group_rotation.setSupportImageTintList, (mergeJsonObjects) getstyleable_vector_drawable_group_rotation.setImageDrawable, (mergeJsonObjects) getstyleable_vector_drawable_group_rotation.setImageLevel, (mergeJsonObjects) getstyleable_vector_drawable_group_rotation.drawableStateChanged, (mergeJsonObjects) getstyleable_vector_drawable_group_rotation.setSupportImageTintMode, (mergeJsonObjects) getstyleable_vector_drawable_group_rotation.AppCompatSpinner, (mergeJsonObjects) getstyleable_vector_drawable_group_rotation.AppCompatImageView, (getColorIntegerOrNulllambda0) getstyleable_vector_drawable_group_rotation.getDropDownWidth, 6), getstyleable_vector_drawable_group_rotation.FillElement, new SimpleExecutableQuery(getstyleable_vector_drawable_group_rotation.position, 15), new SimpleExecutableQuery(getstyleable_vector_drawable_group_rotation.getCardElevation, 17), getstyleable_vector_drawable_group_rotation.LazyLayoutItemReusePolicy, getstyleable_vector_drawable_group_rotation.Contentfoundation, new setUseTempTrackingTableroom_runtime(new SimpleExecutableQuery(getstyleable_vector_drawable_group_rotation.VideoEncoderCrashQuirk, 14), 17), getstyleable_vector_drawable_group_rotation.AeFpsRangeQuirk, getstyleable_vector_drawable_group_rotation.getOnBackPressedDispatcherannotations))), 5);
+        j1 j1Var = new j1(4);
+        this.MediaSessionCompatToken = j1Var;
+        mergeJsonObjects mergejsonobjects = getstyleable_vector_drawable_group_rotation.AlertControllerButtonHandler;
+        mergejsonobjects.getClass();
+        setUseTempTrackingTableroom_runtime setusetemptrackingtableroom_runtime = new setUseTempTrackingTableroom_runtime(new postAnimationRunner(mergejsonobjects, 18), 18);
+        this.MediaBrowserCompatMediaItem = setusetemptrackingtableroom_runtime;
+        setPresentationView setpresentationview = getstyleable_vector_drawable_group_rotation.createnHHXs2Y;
+        setpresentationview.getClass();
+        setUseTempTrackingTableroom_runtime setusetemptrackingtableroom_runtime2 = new setUseTempTrackingTableroom_runtime(new postAnimationRunner(setpresentationview), 19);
+        this.RatingCompat = setusetemptrackingtableroom_runtime2;
+        j1 j1Var2 = new j1(2);
+        this.MediaMetadataCompat = j1Var2;
+        mergeJsonObjects mergejsonobjects2 = getstyleable_vector_drawable_group_rotation.position;
+        mergejsonobjects2.getClass();
+        postAnimationRunner postanimationrunner = new postAnimationRunner(mergejsonobjects2, 19);
+        this.MediaSessionCompatQueueItem = postanimationrunner;
+        mergeJsonObjects mergejsonobjects3 = getstyleable_vector_drawable_group_rotation.Contentfoundation;
+        r8lambdazXN1qqQhLYzDDSf7dMTrYE1xu8I r8lambdazxn1qqqhlyzddsf7dmtrye1xu8i = getstyleable_vector_drawable_group_rotation.getTabContainer;
+        mergejsonobjects3.getClass();
+        r8lambdazxn1qqqhlyzddsf7dmtrye1xu8i.getClass();
+        transactionWithResultsuspendImpl transactionwithresultsuspendimpl = new transactionWithResultsuspendImpl(mergejsonobjects3, r8lambdazxn1qqqhlyzddsf7dmtrye1xu8i);
+        this.MediaSessionCompatResultReceiverWrapper = transactionwithresultsuspendimpl;
+        j1 j1Var3 = new j1(5);
+        this.r8lambda7aWCLmlNPTirEoC8eOYg0rEvmus = j1Var3;
+        mergeJsonObjects mergejsonobjects4 = getstyleable_vector_drawable_group_rotation.getDisplayManager;
+        mergejsonobjects4.getClass();
+        postAnimationRunner postanimationrunner2 = new postAnimationRunner(mergejsonobjects4, 23);
+        this.read = postanimationrunner2;
+        j1 j1Var4 = new j1(3);
+        this.MediaDescriptionCompat = j1Var4;
+        mergeJsonObjects mergejsonobjects5 = getstyleable_vector_drawable_group_rotation.AlertControllerButtonHandler;
+        mergejsonobjects5.getClass();
+        postAnimationRunner postanimationrunner3 = new postAnimationRunner(mergejsonobjects5, 17);
+        mergeJsonObjects mergejsonobjects6 = getstyleable_vector_drawable_group_rotation.Contentfoundation;
+        mergejsonobjects6.getClass();
+        getDoubleOrNull getdoubleornullWrite = getDoubleOrNull.write(new jd(new RouterLogger(mergejsonobjects6, postanimationrunner3)));
+        this.r8lambda54BeH8ZsBru0CXI2CCSP2syNys = getdoubleornullWrite;
+        j1 j1Var5 = new j1(0);
+        this.IconCompatParcelizer = j1Var5;
+        hgExternalSyntheticLambda6 hgexternalsyntheticlambda6 = new hgExternalSyntheticLambda6(1);
+        this.PlaybackStateCompat = hgexternalsyntheticlambda6;
+        setPresentationView setpresentationview2 = new setPresentationView(18);
+        this.PlaybackStateCompatCustomAction = setpresentationview2;
+        mergeJsonObjects mergejsonobjects7 = getstyleable_vector_drawable_group_rotation.Contentfoundation;
+        mergejsonobjects7.getClass();
+        getDoubleOrNull getdoubleornullWrite2 = getDoubleOrNull.write(new k1(new jg(mergejsonobjects7, 0)));
+        mergeJsonObjects mergejsonobjects8 = getstyleable_vector_drawable_group_rotation.DefaultFlingBehaviorperformFling2;
+        mergeJsonObjects mergejsonobjects9 = getstyleable_vector_drawable_group_rotation.getContentPaddingBottom;
+        postAnimationRunner postanimationrunner4 = getstyleable_vector_drawable_group_rotation.AuthPromptFailureException;
+        hasNestedScrollingParent hasnestedscrollingparent = getstyleable_vector_drawable_group_rotation.AbstractClickableNodeonKeyEvent1;
+        com.data.injection.DataModule_ProvideSchedulerFactory dataModule_ProvideSchedulerFactory = getstyleable_vector_drawable_group_rotation.ItemFoundInScroll;
+        mergejsonobjects8.getClass();
+        getdoubleornullWrite.getClass();
+        mergejsonobjects9.getClass();
+        postanimationrunner4.getClass();
+        hasnestedscrollingparent.getClass();
+        dataModule_ProvideSchedulerFactory.getClass();
+        getDoubleOrNull getdoubleornullWrite3 = getDoubleOrNull.write(new i2ExternalSyntheticLambda3(new i2(transactionwithresultsuspendimpl, j1Var3, postanimationrunner2, mergejsonobjects8, j1Var4, getdoubleornullWrite, mergejsonobjects9, postanimationrunner4, j1Var5, hgexternalsyntheticlambda6, setpresentationview2, hasnestedscrollingparent, getdoubleornullWrite2, dataModule_ProvideSchedulerFactory)));
+        SimpleExecutableQuery simpleExecutableQuery = getstyleable_vector_drawable_group_rotation.getCardElevation;
+        simpleExecutableQuery.getClass();
+        this.RemoteActionCompatParcelizer = getDoubleOrNull.write(new hc(new he(j1Var, setusetemptrackingtableroom_runtime, setusetemptrackingtableroom_runtime2, j1Var2, postanimationrunner, simpleExecutableQuery, getdoubleornullWrite3)));
+        setPresentationView setpresentationview3 = new setPresentationView(14);
+        mergeJsonObjects mergejsonobjects10 = getstyleable_vector_drawable_group_rotation.TransformGestureDetectorKtdetectTransformGestures2;
+        setPresentationView setpresentationview4 = getstyleable_vector_drawable_group_rotation.createnHHXs2Y;
+        this.serializer = new r8lambdazXN1qqQhLYzDDSf7dMTrYE1xu8I(setpresentationview3, mergejsonobjects10, setpresentationview4, 18);
+        this.ResultReceiver = new performPushDeliveryFlushlambda0(getstyleable_vector_drawable_group_rotation.LazyLayoutItemReusePolicy, setpresentationview3, setpresentationview4, getstyleable_vector_drawable_group_rotation.ContentInViewNodelaunchAnimation21, 3);
+    }
+
+    @Override // o.r8lambdalZ7kyOB69DcxFWdLKMjr4_8S_34
+    public final void inject(Object obj) {
+        int i = 2 % 2;
+        MapboxFragment mapboxFragment = (MapboxFragment) obj;
+        getSTYLEABLE_VECTOR_DRAWABLE_GROUP_ROTATION getstyleable_vector_drawable_group_rotation = this.write;
+        mapboxFragment.initializeViewTreeOwners = getstyleable_vector_drawable_group_rotation.PlaybackStateCompatCustomAction();
+        mapboxFragment.MediaSessionCompatResultReceiverWrapper = new r8lambdauDhHXlIoLpU0HpCcQH6vOsKpNY(this.ParcelableVolumeInfo);
+        mapboxFragment.RatingCompat = (hc) this.RemoteActionCompatParcelizer.write;
+        mapboxFragment.serializer = getColorIntegerOrNull.serializer((mergeJsonObjects) this.serializer);
+        mapboxFragment.MediaSessionCompatToken = getColorIntegerOrNull.serializer((mergeJsonObjects) this.ResultReceiver);
+        mapboxFragment.MediaMetadataCompat = new N((SharedPreferences) getstyleable_vector_drawable_group_rotation.ForEachGestureKtawaitEachGesture2.write(), (setTransactionSuccessful) getstyleable_vector_drawable_group_rotation.toClipEntry.write(), 0);
+        l1 l1Var = getstyleable_vector_drawable_group_rotation.setScreenFlashOverlayColor;
+        performViewCreated performviewcreated = (performViewCreated) getstyleable_vector_drawable_group_rotation.onMenuItemSelected.write();
+        CachedDeliveryRepository cachedDeliveryRepository = new CachedDeliveryRepository((StateV3DeliveryProvider) getstyleable_vector_drawable_group_rotation.BasicTextFieldKt.write());
+        igExternalSyntheticLambda2 igexternalsyntheticlambda2 = (igExternalSyntheticLambda2) getstyleable_vector_drawable_group_rotation.ScreenFlashView2.write();
+        createQuery createquery = new createQuery((transferSessionPackageI) getstyleable_vector_drawable_group_rotation.Contentfoundation.write(), 2);
+        CourierApplication courierApplication = getstyleable_vector_drawable_group_rotation.r8lambdag6d1IyBXWIL5aeSAzXsZMVuYCQs;
+        int iIconCompatParcelizer = bo.app.n5.IconCompatParcelizer();
+        int iIconCompatParcelizer2 = bo.app.n5.IconCompatParcelizer();
+        mapboxFragment.MediaBrowserCompatMediaItem = new MapNavigationWrapper(l1Var, performviewcreated, cachedDeliveryRepository, igexternalsyntheticlambda2, createquery, new MetricsBatchProcessor(courierApplication, (TraceTimeMeasurementWithPerformanceKit) getSTYLEABLE_VECTOR_DRAWABLE_GROUP_ROTATION.read(1568881057, new Object[]{getstyleable_vector_drawable_group_rotation}, bo.app.n5.IconCompatParcelizer(), -1568881038, iIconCompatParcelizer, bo.app.n5.IconCompatParcelizer(), iIconCompatParcelizer2), (igExternalSyntheticLambda2) getstyleable_vector_drawable_group_rotation.ScreenFlashView2.write(), new inCompatibilityMode(), new createQuery((transferSessionPackageI) getstyleable_vector_drawable_group_rotation.Contentfoundation.write(), 2), (transferSessionPackageI) getstyleable_vector_drawable_group_rotation.Contentfoundation.write(), (getContentViewGroupParentLayout) getstyleable_vector_drawable_group_rotation.ContentInViewNodelaunchAnimation21.write()), (getHeadingrAG3T2k) getstyleable_vector_drawable_group_rotation.setScreenFlashWindow.write(), (hb) getstyleable_vector_drawable_group_rotation.mapToBase.write());
+        mapboxFragment.IconCompatParcelizer = new M((setTransactionSuccessful) getstyleable_vector_drawable_group_rotation.toClipEntry.write(), 0);
+        mapboxFragment.PlaybackStateCompatCustomAction = (igExternalSyntheticLambda2) getstyleable_vector_drawable_group_rotation.ScreenFlashView2.write();
+        mapboxFragment.read = new createQuery((transferSessionPackageI) getstyleable_vector_drawable_group_rotation.Contentfoundation.write(), 2);
+        int i2 = ComponentActivity + 71;
+        r8lambda7IJBVrN0sHyidCAZufWEJFc7yY = i2 % androidx.compose.ui.graphics.Fields.SpotShadowColor;
+        int i3 = i2 % 2;
+    }
+}

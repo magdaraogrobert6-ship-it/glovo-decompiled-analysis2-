@@ -1,0 +1,36 @@
+package o;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
+/* JADX INFO: loaded from: classes2.dex */
+public abstract class onSessionEnded {
+    public static final Map IconCompatParcelizer;
+    public static final Map serializer;
+
+    static {
+        HashMap map = new HashMap();
+        map.put("kirin990", "Kirin990");
+        map.put("kirin980", "Kirin980");
+        map.put("lahaina", "Snapdragon888");
+        map.put("kona", "Snapdragon865");
+        map.put("lito", "Snapdragon765");
+        map.put("mt6873", "Dimensity800");
+        map.put("mt6853", "Dimensity720");
+        map.put("mt6885", "Dimensity1000p");
+        map.put("erd9815_r", "Exynos1080");
+        serializer = Collections.unmodifiableMap(map);
+        HashMap map2 = new HashMap();
+        map2.put("kirin990", "Kirin990");
+        map2.put("kirin980", "Kirin980");
+        map2.put("lahaina", "snapdragon888");
+        map2.put("kona", "snapdragon865");
+        map2.put("lito", "snapdragon765");
+        map2.put("mt6873", "tj800");
+        map2.put("mt6853", "tj720");
+        map2.put("mt6885", "tj1000");
+        map2.put("erd9815_r", "exynos1080");
+        IconCompatParcelizer = Collections.unmodifiableMap(map2);
+    }
+}

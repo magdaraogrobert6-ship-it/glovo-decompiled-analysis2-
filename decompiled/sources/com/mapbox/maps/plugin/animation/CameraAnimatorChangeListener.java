@@ -1,0 +1,6 @@
+package com.mapbox.maps.plugin.animation;
+
+/* JADX INFO: loaded from: classes2.dex */
+public interface CameraAnimatorChangeListener {
+    void onChanged(Object obj);
+}
